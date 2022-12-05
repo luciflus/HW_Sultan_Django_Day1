@@ -10,7 +10,7 @@ def list_item(request):
     context = {
         'items': items
     }
-    return render(request, 'list_item.html', context=context)
+    return render(request, 'list_item.html', context)
 
 def detail_item(request, id):
     item = get_object_or_404(Item, id=id)
